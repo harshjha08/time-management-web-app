@@ -1,0 +1,37 @@
+/* =========================
+   MOBILE RESPONSIVE CSS
+   (DO NOT TOUCH DESKTOP CSS)
+========================= */
+@media (max-width: 768px) {
+
+  body{
+    width: 100%;
+    height: 100%;
+  }
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+  .clock-nav{
+    width: 80%;
+    height: 40px;
+    border-radius: 15px;
+  }
+
+  .nav-btn.active{
+    padding: 5px;
+    border-radius: 15px;
+  
+  }
+  .stopwatch-controls{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 10px;
+  }
+  .timer-inputs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+  }
+}

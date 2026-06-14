@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="clock.png" type="image/png">
+</head>
+<body>
+
+<div class="container">
+        <!-- Nav bar  -->
+        <div class="clock-nav">
+            <button class="nav-btn active" id="time-tab">Clock</button>
+            <button class="nav-btn" id="alarm-tab">Alarm</button>
+            <button class="nav-btn" id="stop-watch">Stopwatch</button>
+            <button class="nav-btn" id="timer">Timer</button>
+        </div>
+
+    <!-- main clock container -->
+    <div class="main">
+        <div class="date">
+        <p id="day"></p>
+        <p id="date"></p>
+        <p id="month"></p>
+        </div>
+        <div class="clock">
+       <span id="time"></span>
+        </div>
+        
+    </div> <!--main container closing tag-->
+
+    <!--Alarm Conatiner-->
+    <div class="alarm-container">
+        <div class="alarm-box">
+
+        <!-- <div class="icon-div">&#9200;</div> -->
+        <div class="time-input-div">
+            <p>Select Time</p>
+            <input type="time" id="input-time" class="inp-time-box">
+            <p>Add Label</p>
+            <input type="text" id="alarm-label" placeholder="e.g. Morning Workout"> 
+            <div class="alarm-btn">
+            <button id="set-alarm">Set Alarm</button>
+            </div>
+        </div>
+        
+        <div class="upcoming-alarms">
+            <h5>Upcoming</h5>
+            <!--JS -->
+        </div>
+        </div>
+    </div>
+
+    <!--stop Watch container-->
+    <div class="stopwatch-container">
+
+    <div class="stopwatch-box">
+
+        <h2>⏱</h2>
+
+        <div class="stopwatch-display">
+            00:00:00
+        </div>
+
+        <div class="stopwatch-controls">
+
+            <button id="start-stopwatch">
+                Start
+            </button>
+
+            <button id="pause-stopwatch">
+                Pause
+            </button>
+
+            <button id="reset-stopwatch">
+                Reset
+            </button>
+            <button id="mark-lap-stopwatch">
+                Lap
+            </button>
+
+        </div>
+
+        <div class="lap-container">
+
+            <h4>Lap Times</h4>
+
+            <div class="lap-list">
+                <!-- JS -->
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <!--Timer container-->
+   <div class="timer-container">
+    <div class="timer-box">
+        <h2>⏳ Timer</h2>
+        <div class="timer-inputs">
+            <input
+                type="number"
+                id="hours"
+                min="0"
+                max="23"
+                placeholder="Hour"
+            >
+            <input
+                type="number"
+                id="minutes"
+                min="0"
+                max="59"
+                placeholder="Minutes"
+            >
+            <input
+                type="number"
+                id="seconds"
+                min="0"
+                max="59"
+                placeholder="Seconds"
+            >
+        </div>
+        <div class="timer-display">
+            00:00:00
+        </div>
+        <div class="timer-controls">
+            <button id="start-timer">
+                Start
+            </button>
+            <button id="pause-timer">
+                Pause
+            </button>
+            <button id="reset-timer">
+                Reset
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+        <!--Theme icons div-->
+        <div class="theme-selector">
+        <div class="color-box" id="black"></div>
+        <div class="color-box" id="purple"></div>
+        <div class="color-box" id="blue"></div>
+        <div class="color-box" id="orange"></div>
+        <div class="color-box" id="green"></div>
+        </div>
+    
+
+
+    </div><!--Container div ending-->
+
+
+    <!--Audio Tag for ringtone-->
+    <audio id="alarm-sound" src="alarm_sound.mp3"></audio>
+
+    <div class="alarm-popup">
+    <div class="alarm-popup-card">
+        <h1>⏰</h1>
+        <h2>Alarm Ringing</h2>
+        <p id="ringing-label">Wake Up!</p>
+
+        <button id="stop-alarm">
+            Stop Alarm
+        </button>
+    </div>
+</div>
+
+   
+    <script src="script.js"></script><!--Adding script tag-->
+</body>
+</html>
