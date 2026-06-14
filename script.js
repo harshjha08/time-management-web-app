@@ -677,3 +677,15 @@ timerResetBtn.addEventListener("click", function () {
 
 // initial display
 updateTimerDisplay();
+
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+        .register("./sw.js")
+        .then(() => {
+            console.log("Service Worker Registered");
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+}
