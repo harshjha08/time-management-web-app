@@ -102,7 +102,7 @@ Digital-Clock/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/digital-clock.git
+git clone https://github.com/harshjha08/digital-clock.git
 ```
 
 2. Open the project folder
